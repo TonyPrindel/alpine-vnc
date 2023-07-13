@@ -1,24 +1,17 @@
 # About
-x11vnc on alpine linux
+An updated and slightly more opinionated fork of danielguerra's alpine-vnc.
+
+Currently, this repo is nothing but a basic x11vnc+openbox session with xterm installed. 
+I intend to use it as a base for personal server stuff. I will maintain it so long 
+as I continue to use it, but I make no promises whatsoever beyond that.
+
 
 # Usage
+I haven't set up a docker page just yet. Until then you will have to build it yourself.  
 
-docker run -d -p 5900:5900 danielguerra/alpine-vnc
+Afterwards, you can run it using:
 
-After this use vnc-client to connect to your alpine.
-Right click shows the menu
+docker run -d -p 5900:5900 *image name here*
 
-Everything runs as user alpine. This user has sudo rights.
-
-The password=alpine you can change is with passwd in
-the xterm.
-
-Default it runs alpine 3.5 (changed). 
-
-If you want to use alpine 3.4 run
-
-docker run -d -p 5900:5900 danielguerra/alpine-vnc:3.4
-
-For alpie edge use
-
-docker run -d -p 5900:5900 danielguerra/alpine-vnc:edge
+# License
+danielguerra did not add a license to the original repo, so I can't add one either.
